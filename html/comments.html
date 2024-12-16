@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="comment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Comments</h1>      
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Homepage</a></li>
+                <li><a href="mybiodata.html">My Biodata</a></li>
+                <li><a href="myportfolio.html">My Portfolio</a></li>
+                <li><a href="video.html">My Video</a></li>
+                <li><a href="comments.html">Your Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Leave a Comment</h2>
+        <form action="submit_comment.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment" rows="6" cols="50" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Grace Personal Page</p>
+    </footer>
+    <script src="comment.js"></script>
+</body>
+</html>

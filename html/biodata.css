@@ -1,0 +1,113 @@
+/* Keyframes for CSS animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    background-image: url('grey2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 35px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    font-size: 30px;
+    color: navajowhite;
+    text-decoration: none;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    border-radius: 4px;
+    animation: fadeIn 1.5s ease-in-out 0.5s;
+}
+
+footer {
+    background-color: transparent;
+    color: dimgrey;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 2s ease-in-out;
+}
+
+th {
+    background-color: darkred;
+    padding: 10px;
+    color: aliceblue;
+}
+
+td {
+    background-color: lightsteelblue;
+    height: 60px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+}
